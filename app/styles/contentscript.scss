@@ -5,6 +5,42 @@ body {
     }
   }
 
+  &.isGrokHidden {
+    a[aria-label="Grok"] {
+      display: none !important;
+    }
+  }
+
+  &.isListsHidden {
+    a[aria-label="Lists"] {
+      display: none !important;
+    }
+  }
+
+  &.isJobsHidden {
+    a[data-testid="jobs-tab-item"] {
+      display: none !important;
+    }
+  }
+
+  &.isCommunitiesHidden {
+    a[aria-label="Communities"] {
+      display: none !important;
+    }
+  }
+
+  &.isPremiumHidden {
+    a[data-testid="premium-signup-tab"] {
+      display: none !important;
+    }
+  }
+
+  &.isVerifiedOrgsHidden {
+    a[data-testid="vo-signup-tab"] {
+      display: none !important;
+    }
+  }
+
   &.isTrendsHidden {
     div[data-testid="sidebarColumn"] > div > div > div > div > div.css-175oi2r {
       > div:not(:first-child):not(:last-child):not(:nth-child(2)):not(.r-195d4m8):not(.r-ahm1il):not(.r-1h3ijdo):not(.r-1mwlp6a):not(.r-1ninfw3) {
@@ -244,6 +280,18 @@ body {
     .r-1tl8opc {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, system-ui,
         sans-serif;
+    }
+  }
+}
+
+body.HomeTimeline {
+  &.isForYouHidden {
+    div[role="tablist"] > div:first-child{
+      flex-grow: 0;
+      flex-shrink: 1;
+    }
+    div[role="tablist"] > div:first-child > a {
+      display: none;
     }
   }
 }

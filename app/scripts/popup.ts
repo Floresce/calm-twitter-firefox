@@ -1,5 +1,5 @@
 localize();
-initValues(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "isViewCountHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
+initValues(["isExploreHidden", "isGrokHidden", "isListsHidden", "isJobsHidden", "isCommunitiesHidden", "isPremiumHidden", "isVerifiedOrgsHidden", "isForYouHidden", "isTrendsHidden", "isReactionNumberHidden", "isViewCountHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
 
 function localize() {
   var objects = document.getElementsByTagName('html');

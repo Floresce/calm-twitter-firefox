@@ -1,6 +1,24 @@
-toggleClass(["isExploreHidden", "isTrendsHidden", "isReactionNumberHidden", "isViewCountHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
+toggleClass(["isExploreHidden", "isGrokHidden", "isListsHidden", "isJobsHidden", "isCommunitiesHidden", "isPremiumHidden", "isVerifiedOrgsHidden", "isForYouHidden", "isTrendsHidden", "isReactionNumberHidden", "isViewCountHidden", "showCalmText", "isFollowingNumberHidden", "isFollowerNumberHidden", "isReactionNumberAlwaysHidden", "isReactionNumberDetailHidden", "isWhoToFollowHidden", "isTopicsToFollowHidden", "isFontChanged"]);
 addCalmTitle();
 setTimeout(changeCalmColor,  250);
+
+// Observe for changes in the URL or relevant DOM nodes (Because Twitter is a Single Page Application)
+const observer = new MutationObserver(() => {
+  updateBodyClass();
+});
+observer.observe(document.body, {
+  childList: true,
+  subtree: true,
+});
+updateBodyClass();
+
+function updateBodyClass() {
+  if (window.location.pathname === "/home") {
+    document.body.classList.add("HomeTimeline");
+  } else {
+    document.body.classList.remove("HomeTimeline");
+  }
+}
 
 function toggleClass(keys: string[]) {
   chrome.storage.local.get(keys, function (data) {

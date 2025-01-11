@@ -18,6 +18,27 @@
   "titleIsExploreHidden": {
     "message": "Hide explore tab"
   },
+  "titleIsGrokHidden": {
+    "message": "Hide Grok tab"
+  },
+  "titleIsListsHidden": {
+    "message": "Hide Lists tab"
+  },
+  "titleIsJobsHidden": {
+    "message": "Hide Jobs tab"
+  },
+  "titleIsCommunitiesHidden": {
+    "message": "Hide Communities tab"
+  },
+  "titleIsPremiumHidden": {
+    "message": "Hide Premium tab"
+  },
+  "titleIsVerifiedOrgsHidden": {
+    "message": "Hide Verified Orgs tab"
+  },
+  "titleIsForYouHidden": {
+    "message": "Hide For You tab from Home bar"
+  },
   "titleIsTrendsHidden": {
     "message": "Hide trends and who to follow from right column"
   },
